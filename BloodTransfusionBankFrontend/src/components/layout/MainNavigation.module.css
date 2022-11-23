@@ -5,6 +5,7 @@
   justify-content: space-between;
   background-color: #262626;
   margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .logo {
@@ -27,6 +28,7 @@
 .header li {
   margin-right: 3rem;
   margin-top: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .header a {

@@ -8,13 +8,12 @@ import MyProfilePage from './pages/MyProfile';
 import SurveyPage from './pages/Survey';
 import AllComplaintsPage from './pages/Complaints';
 
-import MainNavigation from './components/layout/MainNavigation';
+import Layout from './components/layout/Layout';
 
 
 function App() {
    return ( 
-   <div>
-    <MainNavigation/>
+   <Layout>
     <Switch>
     <Route path='/' exact>
       <AllDonationCentersPage/>
@@ -38,7 +37,7 @@ function App() {
       <AllComplaintsPage/>
     </Route>
     </Switch>
-   </div>
+   </Layout>
    );
 }
 
