@@ -1,0 +1,12 @@
+C:\Users\Lana\Desktop\BloodTransfusionBank\BloodTransfusionBank\BloodTransfusionBankShared\bin\Debug\net5.0\BloodTransfusionBankShared.deps.json
+C:\Users\Lana\Desktop\BloodTransfusionBank\BloodTransfusionBank\BloodTransfusionBankShared\bin\Debug\net5.0\BloodTransfusionBankShared.dll
+C:\Users\Lana\Desktop\BloodTransfusionBank\BloodTransfusionBank\BloodTransfusionBankShared\bin\Debug\net5.0\ref\BloodTransfusionBankShared.dll
+C:\Users\Lana\Desktop\BloodTransfusionBank\BloodTransfusionBank\BloodTransfusionBankShared\bin\Debug\net5.0\BloodTransfusionBankShared.pdb
+C:\Users\Lana\Desktop\BloodTransfusionBank\BloodTransfusionBank\BloodTransfusionBankShared\obj\Debug\net5.0\BloodTransfusionBankShared.csproj.AssemblyReference.cache
+C:\Users\Lana\Desktop\BloodTransfusionBank\BloodTransfusionBank\BloodTransfusionBankShared\obj\Debug\net5.0\BloodTransfusionBankShared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lana\Desktop\BloodTransfusionBank\BloodTransfusionBank\BloodTransfusionBankShared\obj\Debug\net5.0\BloodTransfusionBankShared.AssemblyInfoInputs.cache
+C:\Users\Lana\Desktop\BloodTransfusionBank\BloodTransfusionBank\BloodTransfusionBankShared\obj\Debug\net5.0\BloodTransfusionBankShared.AssemblyInfo.cs
+C:\Users\Lana\Desktop\BloodTransfusionBank\BloodTransfusionBank\BloodTransfusionBankShared\obj\Debug\net5.0\BloodTransfusionBankShared.csproj.CoreCompileInputs.cache
+C:\Users\Lana\Desktop\BloodTransfusionBank\BloodTransfusionBank\BloodTransfusionBankShared\obj\Debug\net5.0\BloodTransfusionBankShared.dll
+C:\Users\Lana\Desktop\BloodTransfusionBank\BloodTransfusionBank\BloodTransfusionBankShared\obj\Debug\net5.0\ref\BloodTransfusionBankShared.dll
+C:\Users\Lana\Desktop\BloodTransfusionBank\BloodTransfusionBank\BloodTransfusionBankShared\obj\Debug\net5.0\BloodTransfusionBankShared.pdb

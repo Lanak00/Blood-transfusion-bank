@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BloodTransfusionBankServer",
+    "\\BloodTransfusionBankServer\\BloodTransfusionBank",
+    "\\BloodTransfusionBankServer\\BloodTransfusionBank\\Models"
+  ],
+  "SelectedNode": "\\BloodTransfusionBankServer\\BloodTransfusionBank\\Models\\AppDbContext.cs",
+  "PreviewInSolutionExplorer": false
+}
