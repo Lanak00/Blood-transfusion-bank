@@ -1,11 +1,19 @@
 import HoverCard from '../ui/HoverCard';
 import classes from './DonationCenterItem.module.css';
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 
 function DonationCenterItem(props) {
+
+    const navigate = useHistory();
+
+    const handleClick = async () => {
+            navigate.push("/center-profile/" + props.id);
+            console.log(props.id);
+    }
+
     return <li className={classes.item}>
-        <Link to = {`/center-profile/${props.id}/appointments`}>
+     <button onClick={handleClick}>
         <HoverCard>
         <div className={classes.allcont}>
         <div className={classes.image}>
@@ -18,8 +26,7 @@ function DonationCenterItem(props) {
         </div>
         </div>
         </HoverCard>
-        </Link>
-       
+     </button>
     </li>
 }
 export default DonationCenterItem;

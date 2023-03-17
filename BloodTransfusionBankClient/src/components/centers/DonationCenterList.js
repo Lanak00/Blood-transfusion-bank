@@ -12,8 +12,7 @@ return (
         image = {center.image}
         address = {center.address}
         city = {center.city}
-        description = {center.description}
-        
+        description = {center.description}      
      />)} 
 </ul>
 )

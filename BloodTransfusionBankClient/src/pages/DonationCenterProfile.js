@@ -1,9 +1,7 @@
 import React from 'react';
-import Card from '../components/ui/Card';
  
 function DonationCenterProfilePage(props) {
     return <li>
-        <Card>
         <div>
         <div>
             <img src = {props.image} alt={props.title}/>
@@ -14,7 +12,6 @@ function DonationCenterProfilePage(props) {
             <p>{props.description}</p>
         </div>
         </div>
-        </Card>
     </li>
 }
 
