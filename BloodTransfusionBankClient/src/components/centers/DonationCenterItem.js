@@ -4,16 +4,17 @@ import React from 'react';
 import { useHistory } from "react-router-dom";
 
 function DonationCenterItem(props) {
-
+ 
     const navigate = useHistory();
 
-    const handleClick = async () => {
-            navigate.push("/center-profile/" + props.id);
-            console.log(props.id);
+    const navigateToCenterDetails = async (props) => {
+        navigate.push("/center-profile/" + props.id, {props});
+        console.log(props.id);
+        console.log(props.address);
     }
 
     return <li className={classes.item}>
-     <button onClick={handleClick}>
+     <button onClick={navigateToCenterDetails}>
         <HoverCard>
         <div className={classes.allcont}>
         <div className={classes.image}>

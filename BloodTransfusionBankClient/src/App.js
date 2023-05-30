@@ -7,6 +7,8 @@ import MyAppointmentsPage from './pages/MyAppointments';
 import MyProfilePage from './pages/MyProfile';
 import SurveyPage from './pages/Survey';
 import AllComplaintsPage from './pages/Complaints';
+import LoginPage from './pages/Login';
+import RegistrationPage from './pages/Registration';
 
 import Layout from './components/layout/Layout';
 
@@ -18,13 +20,22 @@ function App() {
     <Route path='/' exact>
       <AllDonationCentersPage/>
     </Route>
-    <Route path='/center-profile/:id/'>
+    <Route path = "/login">
+      <LoginPage/>
+    </Route>
+    <Route path = "/register">
+      <RegistrationPage/>
+    </Route>
+    <Route path="/center-profile/:id">
       <DonationCenterProfilePage/>
     </Route>
     <Route path='/center-profile/:id/appointments'>
       <AllDonationCenterAppointments/>
     </Route>
     <Route path='/appointments/:userid/'>
+      <MyAppointmentsPage/>
+    </Route>
+    <Route path='/appointments/:userid/history'>
       <MyAppointmentsPage/>
     </Route>
     <Route path='/profile/:userId/'>

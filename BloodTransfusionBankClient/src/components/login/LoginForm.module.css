@@ -1,0 +1,45 @@
+.form {
+  background-color: transparent;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 10%;
+  align-items: center;
+}
+.container {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.items {
+  padding-bottom: 0.3cm;
+}
+
+.form h1 {
+    align-content: center;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 120;
+    font-size: x-large;
+}
+
+.inputs {
+    align-items: center;
+    text-align: center;
+    margin: 2;
+}
+
+.redirect {
+  display: flex;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  align-items: center;
+  text-align: center;
+  font-weight: 20;
+}
+.linkto {
+  color: rgb(91, 29, 149);
+  font-weight: 150;
+  margin-left: 1;
+}
+
+

@@ -1,7 +1,12 @@
 import React from 'react';
+import AppointmentsMenu from '../components/appointments/AppointmentsMenu';
 
 function MyAppointmentsPage() {
-    return <div> My appointments page </div>;
+    return (
+        <div>
+        <AppointmentsMenu/>
+       </div>
+    )
 }
 
 export default MyAppointmentsPage;

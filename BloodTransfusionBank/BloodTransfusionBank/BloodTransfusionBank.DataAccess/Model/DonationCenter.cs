@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BloodTransfusionBank.DataAccess.Model
+﻿namespace BloodTransfusionBank.DataAccess.Model
 {
     public class DonationCenter
     {
@@ -15,5 +9,7 @@ namespace BloodTransfusionBank.DataAccess.Model
         public byte[] Image { get; set; }
         public float Rating { get; set; }
         public string Description { get; set; }
+
+        public IEnumerable<Appointment> Appointments { get; set; }
     }
 }

@@ -1,8 +1,15 @@
 import React from 'react';
- 
-function DonationCenterProfilePage(props) {
+import { useNavigation, useNavigationParam } from '@react-navigation/native';
+
+function DonationCenterProfilePage() {
+    
+    console.log(props)
+    const props = useNavigationParam('props');
     return <li>
         <div>
+            <div>
+                <h1>{props.id}</h1>
+            </div>
         <div>
             <img src = {props.image} alt={props.title}/>
         </div>

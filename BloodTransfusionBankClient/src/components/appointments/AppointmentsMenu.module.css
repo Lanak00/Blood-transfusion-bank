@@ -1,0 +1,35 @@
+.header {
+    height: 2rem;
+    background-color: transparent;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+    
+  .header ul {
+    list-style: none;
+    display:flex;
+    margin-left: 40%;
+    padding: 0;
+    vertical-align: middle;
+
+  }
+  
+  .header li {
+    margin-right: 3rem;
+    margin-top: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    align-content: center;
+  }
+  
+  .header a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: rgb(190, 190, 190);
+  }
+  
+
+  .header a:active {
+    color: black;
+    box-shadow: inset;
+  }
