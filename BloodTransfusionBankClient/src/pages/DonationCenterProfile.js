@@ -1,10 +1,11 @@
 import React from 'react';
-import { useNavigation, useNavigationParam } from '@react-navigation/native';
+import { useParams } from 'react-router-dom';
 
-function DonationCenterProfilePage() {
-    
-    console.log(props)
-    const props = useNavigationParam('props');
+function DonationCenterProfilePage(props) {
+
+    const params = useParams();
+
+    console.log(params);
     return <li>
         <div>
             <div>

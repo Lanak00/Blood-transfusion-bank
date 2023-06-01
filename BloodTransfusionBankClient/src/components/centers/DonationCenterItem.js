@@ -7,8 +7,8 @@ function DonationCenterItem(props) {
  
     const navigate = useHistory();
 
-    const navigateToCenterDetails = async (props) => {
-        navigate.push("/center-profile/" + props.id, {props});
+    const navigateToCenterDetails = async () => {
+        navigate.push("/center-profile/" + props.id, { id: props.id });
         console.log(props.id);
         console.log(props.address);
     }
