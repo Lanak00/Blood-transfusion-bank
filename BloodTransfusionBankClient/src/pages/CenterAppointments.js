@@ -1,6 +1,8 @@
 import React from 'react';
 import AppointmentItemList from '../components/appointments/AppointmentItemList';
 
+
+
 const DUMMY_DATA = [
     {
         id : 1,
@@ -32,7 +34,10 @@ const DUMMY_DATA = [
     }
 ]
 
+
+
 function AllDonationCenterAppointments() {
+
     return (
     <section>
         <AppointmentItemList appointments = {DUMMY_DATA} ></AppointmentItemList>

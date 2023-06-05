@@ -2,24 +2,25 @@ using BloodTransfusionBank.BussinessLogic.Interfaces;
 using BloodTransfusionBank.BussinessLogic.Services;
 using BloodTransfusionBank.BussinessLogic.Services.Auth;
 using BloodTransfusionBank.DataAccess;
+using Microsoft.AspNetCore.Cors.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-/*var config = new ConfigurationBuilder()
+var config = new ConfigurationBuilder()
         .AddJsonFile("appsettings.json", optional: false)
-        .Build();*/
+        .Build();
 
 // Add services to the container.
 
-/*var mySpecificOrigins = "_mySpecificOrigins";
+var mySpecificOrigins = "_mySpecificOrigins";
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: mySpecificOrigins,
                       builder =>
                       {
-                          builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().AllowCredentials();
+                          builder.AllowAnyOrigin();
                       });
-});*/
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -67,6 +68,11 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 //app.UseCors(mySpecificOrigins);
+app.UseCors(builder =>
+                builder.WithOrigins(config["ApplicationSettings:Client_URL"].ToString())
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                );
 
 app.MapControllers();
 

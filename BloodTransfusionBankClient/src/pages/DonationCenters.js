@@ -1,5 +1,7 @@
 import React from 'react';
 import DonationCenterList from '../components/centers/DonationCenterList'
+import axios from 'axios';
+import { useState, useEffect } from 'react';
 
 const DUMMY_DATA = [
     {
@@ -42,6 +44,31 @@ const DUMMY_DATA = [
 ]
 
 function AllDonationCentersPage() {
+
+    const [center, setCenter] = useState([])
+    const API_URI = 'https://localhost:7162/donationCenters'
+    const getCenters = async () => {
+        try {
+          const fetchData = await axios.get(API_URI, {
+            headers: {
+              authorization: 'Bearer JWT Token',
+            },
+          })
+        setCenter(fetchData.data);
+        } catch (error) {
+          console.log(error)
+        }
+      }
+    
+      useEffect(() => {
+        window.addEventListener('load', getCenters)
+        console.log(center)
+        return () => {
+          window.removeEventListener('load', getCenters)
+        }
+      }, [center])
+
+
     return (
         <section>
             <DonationCenterList centers = {DUMMY_DATA}/>
